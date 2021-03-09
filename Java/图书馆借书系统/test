@@ -1,0 +1,16 @@
+package 图书馆借书系统;
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		book book1=new book("a",1,1);
+		book book2=new book("b",2,2);
+		book book3=new book("c",3,3);
+		book book4=new book("d",4,4);
+		student student1=new student("zz",190424,0,10);
+		book1.borrow(student1);
+		book2.borrow(student1);
+		student1.ergodic();
+	}
+
+}
