@@ -1,0 +1,10 @@
+package 图书馆借书系统;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class card {
+	int keep_num;//已借书籍
+	int rest_num;//可借书籍
+	List<book> books=new ArrayList<book>();
+}
