@@ -1,0 +1,16 @@
+import java.lang.Math;
+public class 解一元二次方程 {
+	public void 求根公式(double a,double b,double c){
+		int delta;
+		delta=b*b-4*a*c;
+		if(delta>0) {
+			System.out.println("x1="+(-b-java.lang.Math.sqrt(delta))/2+",x2="+(-b+java.lang.Math.sqrt(delta))/2);
+		}
+		if(delta==0) {
+			System.out.println("x1=x2="+(-0.5*b));
+		}
+		if(delta<0) {
+			System.out.println("无解");
+		}
+	}
+}
