@@ -1,0 +1,20 @@
+package 图书馆借书系统;
+
+public class student {
+	String Sname;//学生名字
+	int inum;//学号
+	card mycard;
+	student(String Sname,int inum,int ikeep,int irest){
+		this.Sname=Sname;
+		this.inum=inum;
+		mycard=new card();
+		this.mycard.keep_num=ikeep;
+		this.mycard.rest_num=irest;
+	}
+    public void ergodic(){
+    	for (int i = 0; i < this.mycard.books.size(); i++) {
+            book b = (book)this.mycard.books.get(i);
+            System.out.println(b.iid+"  "+b.inumber+"  "+b.Sname);
+            }
+    }
+}
