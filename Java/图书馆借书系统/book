@@ -1,1 +1,24 @@
+package 图书馆借书系统;
 
+public class book {
+	String Sname;//书名
+	int iid;//书本id
+	int inumber;//书本数量
+	public book (String Sname,int iid,int inumber){
+		this.Sname=Sname;
+		this.iid=iid;
+		this.inumber=inumber;
+	}
+	public void borrow(student stu) {//借书函数
+		stu.mycard.books.add(new book(this.Sname,this.iid,1));
+		this.inumber-=1;
+		stu.mycard.keep_num+=1;
+		stu.mycard.rest_num-=1;
+	}
+	public void repay(student stu,int ipos) {//还书函数
+		stu.mycard.books.remove(ipos);
+		this.inumber+=1;
+		stu.mycard.keep_num-=1;
+		stu.mycard.rest_num+=1;
+	}
+}
