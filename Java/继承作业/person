@@ -1,0 +1,26 @@
+package 学校的管理系统;
+
+public abstract class person {
+	private String name;//the person's name
+	private String num;//the person's number
+	protected String type;
+	void modify(String name,String num) {
+		this.name=name;
+		this.num=num;
+	}
+	protected void add_info() {
+		
+	}
+	protected String getname() {
+		return this.name;
+	}
+	protected String getnum() {
+		return this.num;
+	}
+	public void print() {
+	}
+	public String gettype() {
+		return this.type;
+	}
+
+}
