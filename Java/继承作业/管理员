@@ -1,0 +1,16 @@
+package 学校的管理系统;
+
+public class 管理员 extends person {
+	private String type;
+	管理员(){
+		this.type="管理员";
+	}
+	public String gettype() {
+		return this.type;
+	}
+	public void print() {
+		System.out.println("姓名："+this.getname());
+		System.out.println("管理员编号："+this.getnum());
+	}
+
+}
