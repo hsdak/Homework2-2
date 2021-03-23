@@ -1,0 +1,27 @@
+package 学校的管理系统;
+import java.util.ArrayList;
+import java.util.Scanner;
+public class 管理 {
+	static private String Sname,Snum;
+	static private ArrayList<person> p=new ArrayList<person>();
+	static void create_p(person person) {
+		p.add(person);
+	}
+    static void modify(person person) {
+    	System.out.println("输入"+person.gettype()+"信息");
+		Scanner in=new Scanner(System.in);
+		Sname=in.next();
+		Snum=in.next();
+		person.modify(Sname, Snum);
+		person.add_info();
+	}
+    static void delete_p(int i) {
+    	p.remove(i);
+    }
+    static void print_all() {
+    	for(person i:p) {
+    		i.print();
+    	}
+    }
+
+}
