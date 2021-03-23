@@ -1,8 +1,8 @@
 package 学校的管理系统;
 
 public abstract class person {
-	private String name;//the person's name
-	private String num;//the person's number
+	private String name;
+	private String num;
 	protected String type;
 	void modify(String name,String num) {
 		this.name=name;
