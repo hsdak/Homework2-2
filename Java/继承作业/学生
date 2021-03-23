@@ -1,0 +1,26 @@
+package 学校的管理系统;
+import java.util.Scanner;
+public class 学生 extends person {
+	private String type;
+	private String _class;
+	学生(){
+		this.type="学生";
+	}
+	public String get_class() {
+		return this._class;
+	}
+	public String gettype() {
+		return this.type;
+	};
+	public void print() {
+		System.out.println("姓名："+this.getname());
+		System.out.println("学号："+this.getnum());
+		System.out.println("班级："+this.get_class());
+	}
+	public void add_info() {
+		System.out.println("输入班级：");
+		Scanner in=new Scanner(System.in);
+		this._class=in.next();
+	}
+
+}
